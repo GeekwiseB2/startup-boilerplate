@@ -1,6 +1,6 @@
-font-family: 'Oswald', sans-serif;
-font-family: 'Montserrat', sans-serif;
-font-family: 'Roboto', sans-serif;
+/* font-family: 'Oswald', sans-serif; */
+/* font-family: 'Montserrat', sans-serif; */
+/* font-family: 'Roboto', sans-serif; */
 /* Global */
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Montserrat', sans-serif;
@@ -10,6 +10,7 @@ h1,h2,h3,h4,h5,h6 {
 
 h2 {
   font-size: 2.2em;
+  line-height: 1.3em;
 }
 
 p {
@@ -18,14 +19,14 @@ p {
   font-size: 1em;
 }
 
-.color-text-white {
-  color: white;
-}
-
-.fab {
+.fab, .far, .fas {
   font-size: 30px;
   margin-left: 5px;
   margin-right: 5px;
+}
+
+.color-text-white {
+  color: white;
 }
 
 /* Nav */
@@ -55,13 +56,14 @@ p {
   color: #c72c72;
 }
 
-/* Homepage Jumbo */
-.jumbotron {
-  margin-bottom: 0;
+.nav-main-link.active-link {
+  color: #ffffff;
 }
 
+/* Homepage Jumbo */
 .home-jumbotron {
   background-color: rgb(36, 151, 163);
+  margin-bottom: 0px;
   padding-top: 40px;
   padding-bottom: 40px;
   display: flex;
@@ -69,9 +71,37 @@ p {
   text-align: center;
 }
 
+.second-section {
+  background: #030116;
+  padding-bottom: 80px;
+  color: #ffffff;
+}
+
+.section-content {
+  margin-top: 160px;
+  margin-bottom: 100px;
+}
+
+.section-item {
+  text-align: center;
+}
+
+.qoute-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: #efe655;
+}
+
+/* Contact Page */
+.contact-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: #efe655;
+}
+
 /* Footer */
 .footer-section {
-  background-color: black;
+  background-color: #030116;
   padding-top: 60px;
   padding-bottom: 60px;
   color: #ffffff;
@@ -83,6 +113,7 @@ p {
 
 .footer-social a {
   color: #c72c72;
+  text-decoration: none;
 }
 
 .footer-social a:hover {
@@ -90,20 +121,25 @@ p {
 }
 
 /* SM Screen */
-@media (min-width:768px) {
+@media only screen and (min-width:768px) {
   .home-jumbotron {
-    min-height: 100vh;
+    min-height: calc(100vh - 50px);
+    /* fix this */
   }
 }
 
 /* MD Screen */
-@media (min-width:992px) {
+@media only screen and (min-width:992px) {
   .home-jumbotron {
     text-align: left;
   }
 
   .home-jumbotron-left {
-    padding-top: 100px;
+    padding-top: 20px;
+  }
+
+  .second-item {
+    text-align: left;
   }
 
   .footer-social {
@@ -112,6 +148,12 @@ p {
 }
 
 /* LG Screen */
-@media (min-width:1200px) {
+@media only screen and (min-width:1200px) {
+  .home-jumbotron-left {
+    padding-top: 100px;
+  }
 
+  .second-content {
+    margin-bottom: 100px;
+  }
 }

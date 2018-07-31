@@ -6,13 +6,16 @@
 	<title>StartUP Technologies</title>
     <!-- link google fonts here -->
 		<link href="https://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:800" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
     <!-- link all the css here -->
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/all.css">
+		<link rel="stylesheet" href="css/fontawesome-all.min.css">
 		<link rel="stylesheet" href="css/styles.css">
 </head>
+
+		<!-- Start Body Section-->
 <body>
 	<nav class="navbar navbar-default">
   	<div class="container">
@@ -24,37 +27,108 @@
         	<span class="icon-bar"></span>
         	<span class="icon-bar"></span>
       	</button>
-      	<a class="navbar-brand" href="#"><h1>StartUP</h1></a>
-    	</div>
+      	<a class="navbar-brand" href="#">
+					<h1>StartUP</h1>
+				</a>
+    	</div> <!-- /.navbar-header -->
 
     <!-- Collect the nav links, forms, and other content for toggling -->
-		<!--
     	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       	<ul class="nav navbar-nav navbar-right">
-        	<li><a href="#">Link</a></li>
+        	<li><a href="index.html"><span class="nav-main-link active-link">Home</span></a></li>
+					<li><a href="contact.html"><span class="nav-main-link">Contact Us</span></a></li>
     	  </ul>
-  	  </div>
-		-->
-			<!-- /.navbar-collapse -->
-	  </div><!-- /.container -->
-	</nav>
+  	  </div> <!-- /.navbar-collapse -->
+	  </div> <!-- /.container -->
+	</nav> <!-- /.navbar -->
+
+		<!-- End Navbar / Start Jumbotron -->
 
 	<div class="jumbotron home-jumbotron">
   	<div class="container">
 			<div class="row">
 				<div class="col-md-7 col-md-push-5">
-					<img src="img/construction.png" alt="Bulldoser" class="img-responsive">
+					<img src="img/city1.png" alt="City" class="img-responsive">
 				</div>
 				<div class="col-md-5 col-md-pull-7 home-jumbotron-left color-text-white">
-					<h2>Our community is currently under construction, come back soon.</h1>
+					<h2>Creating a smarter community today.</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae perferendis vero saepe dolores, illum tempora, ipsum ipsam officia amet consectetur fugiat optio facilis, non quisquam, distinctio odit expedita eum cupiditate.</p>
+					<<a class="btn btn-primary btn-lg" href="#">See Features</a>
 				</div>
 			</div> <!-- /.row -->
   	</div> <!-- /.container -->
 	</div> <!-- /.jumbotron -->
 
+	<!-- Start Section 2 -->
+	<section id="second-section" class="second-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 text-center color-text-white second-content">
+					<h2>StartUp Technologies is out of this world</h2>
+					<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, ad. Corporis aliquam itaque non, dolore accusamus amet ullam, vel beatae nesciunt in molestias quod officiis, quam explicabo aperiam illum pariatur?</p>
+					<a class="btn btn-lg btn-primary" href="#">Purchase Now</a>
+				</div>
+				<div class="col-md-4 hidden-xs hidden-sm second-item">
+					<i class="fas fa-angle-double-right"></i>
+					<h3>It's fast</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus elementum vestibulum mauris, at venenatis mauris ornare vitae. Mauris sed metus euismod, accumsan sem ac, tempus dui.</p>
+				</div>
+				<div class="col-md-4 hidden-xs hidden-sm second-item">
+					<i class="fas fa-feather-alt"></i>
+					<h3>It's lean</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus elementum vestibulum mauris, at venenatis mauris ornare vitae. Mauris sed metus euismod, accumsan sem ac, tempus dui.</p>
+				</div>
+				<div class="col-md-4 hidden-xs hidden-sm second-item">
+					<i class="fas fa-rocket"></i>
+					<h3>It's robust</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus elementum vestibulum mauris, at venenatis mauris ornare vitae. Mauris sed metus euismod, accumsan sem ac, tempus dui.</p>
+				</div>
+				<div class="col-sm-12 visible-xs-block visible-sm-block second-item">
+					<i class="fas fa-rocket"></i>
+					<h3>Technology of tomorrow.</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam nisi, eligendi fugiat quam. Quod assumenda libero hic, nam minima voluptates facilis rem blanditiis earum velit autem, non atque, praesentium porro.</p>
+				</div>
+			</div> <!-- /.row -->
+		</div> <!-- /.container -->
+	</section> <!-- #second-section -->
+
+	<!-- Start Qoute-section -->
+	<section class="qoute-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2">
+					<div id="carousel-example-generic" class="carousel slide qoute-carousel" data-ride="carousel">
+			<!-- Indicators -->
+						<ol class="carousel-indicators">
+							<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+							<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+						</ol>
+			<!-- Wrapper for slides -->
+						<div class="carousel-inner" role="listbox">
+							<div class="item active">
+								<blockquote>
+									<h3>Amazing</h3>
+									<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus elementum vestibulum mauris, at venenatis mauris ornare vitae. Mauris sed metus euismod, accumsan sem ac, tempus dui.</p>
+									<footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+								</<blockqoute>
+							</div> <!-- /.item active -->
+							<div class="item">
+								<blockqoute>
+									<h3>Amazing</h3>
+									<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus elementum vestibulum mauris, at venenatis mauris ornare vitae. Mauris sed metus euismod, accumsan sem ac, tempus dui.</p>
+									<footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+								</blockqoute>
+							</div>
+						</div> <!-- /.carousel-inner -->
+					</div> <!-- #carousel-example-generic -->
+				</div>
+			</div> <!-- /.row -->
+		</div> <!-- /.container -->
+	</section> <!-- /.qoute-section -->
+
+		<!-- Start Footer Section -->
 	<section class="footer-section">
-		<div class="container footer-social">
+		<footer class="container footer-social">
 			<div class="row">
 				<div class="col-md-4 col-md-offset-8">
 					<h4 class="text-uppercase">Follow us on Social Media</h4>
@@ -72,7 +146,7 @@
 					</a>
 				</div>
 			</div> <!-- /.row -->
-		</div> <!-- /.container -->
+		</footer> <!-- /.container -->
 	</section> <!-- /.footer-section -->
 
     <!-- link all the scripts here -->
